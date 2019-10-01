@@ -1,6 +1,6 @@
 pipeline {
-    agent none
-    node {
+    agent any
+   
         stages {
             stage('terraform version') {
                 steps {
@@ -9,5 +9,4 @@ pipeline {
             }
 
         }
-    }
 }
